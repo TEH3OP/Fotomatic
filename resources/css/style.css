@@ -30,7 +30,7 @@ body{
 
 .image-container {
   overflow: hidden;
-  width: 25%;
+  flex: 1 1;
 }
 
 .image-container img {
@@ -40,7 +40,7 @@ body{
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 450px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -57,7 +57,6 @@ header {
   /* margin: 0 auto; */
   z-index: 100;
   width: 100%;
-
 }
 
 header .content {
@@ -86,16 +85,16 @@ nav a {
 }
 
 header .icon {
-  width: 2rem;
+  /* width: 2rem; */
   padding-left: .75rem;
-  /* height: 1rem; */
+  height: 1rem;
 }
 
 header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 450px) {
   header .desktop {
     display: none;
   }
@@ -140,7 +139,7 @@ header .mobile {
 #sign-up-section.banner{
   background-image: url(../images/banner-landingpage.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: auto 100%; */
 }
 
 #sign-up-cta {
@@ -244,11 +243,11 @@ header .mobile {
 }
 
 .feature {
-  flex: 1;
+  flex: 1 1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  max-width: 50%;
+  
 }
 
 .feature .image-container {
@@ -286,6 +285,12 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+  #features-section {
+    padding: 5% 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   #features-section {
     flex-flow: column;
     padding: 0;
